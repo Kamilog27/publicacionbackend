@@ -1,0 +1,35 @@
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+
+{
+    "email":"prueba@prueba.com",
+    "nickname":"prueba01",
+    "password":"hola123456"
+}
+###
+POST http://localhost:3000/create-publicacion
+Content-Type: application/json
+accesstoken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBydWViYUBwcnVlYmEuY29tIiwibmlja25hbWUiOiJwcnVlYmEwMSIsImlhdCI6MTYzOTUyNTgwNX0.XAg1Js4yVrLS58ZJHODq4Cch7Bl-42hmZ8uX0iekHLY
+email:prueba@prueba.com
+nickname:prueba01
+
+{
+    "text":"Si"
+}
+###
+GET http://localhost:3000/publicaciones
+Content-Type: application/json
+accesstoken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBydWViYUBwcnVlYmEuY29tIiwibmlja25hbWUiOiJwcnVlYmEwMSIsImlhdCI6MTYzOTUyNTgwNX0.XAg1Js4yVrLS58ZJHODq4Cch7Bl-42hmZ8uX0iekHLY
+email:prueba@prueba.com
+nickname:prueba01
+
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"prueba02@prueba.com",
+    "password":"hola123456"
+}
